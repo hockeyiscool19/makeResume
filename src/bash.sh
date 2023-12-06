@@ -19,6 +19,8 @@ mv resume.pdf "Eisenman, Jordan -- $DIRNAME.pdf"
 xelatex atsGen.tex
 mv atsGen.pdf "Eisenman, Jordan (A) -- $DIRNAME.pdf"
 
+evince "Eisenman, Jordan (A) -- $DIRNAME.pdf" &
+
 # Remove unnecessary files
 rm -f *.aux *.bcf *.log *.out *.run.xml
 
