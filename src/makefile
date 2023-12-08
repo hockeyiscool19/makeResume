@@ -28,7 +28,8 @@ create_directory: select_template
 	mkdir -p $$dirname; \
 	cp $(FILES) $$dirname/; \
 	cp templates/`cat template.txt` $$dirname/; \
-	echo "DIRNAME=$$dirname" > $$dirname/.env
+	echo "DIRNAME=$$dirname" > $$dirname/.env; \
+	echo "SELECTED_TEMPLATE=`cat template.txt`" >> $$dirname/.env
 
 # (5) Target to compile .tex files using bash.sh
 compile_pdfs: create_directory
