@@ -1,0 +1,162 @@
+% Define custom commands for reusable elements
+
+% Personal Information
+\newcommand{\ResumeHeader}{
+    \begin{tabularx}{\linewidth}{@{} C @{}}
+    \color[HTML]{1C033C} \Huge{Jordan Eisenman} \\[6pt]
+    \\
+    \textcolor[HTML]{371e77}{\raisebox{-0.05\height}{\faEnvelope} jordaneisenman@gmail.com} $|$
+    \textcolor[HTML]{371e77}{\raisebox{-0.05\height}{\faMobile} +1-802-733-7703} $|$ 
+    {\raisebox{-0.05\height}{\faGithub} \href{https://github.com/hockeyiscool19}{GitHub}} $|$
+    \textcolor[HTML]{371e77}{\raisebox{-0.05\height}{\faChrome} \href{https://jordan-portfolio-7wxawbmyea-uc.a.run.app/}{Portfolio Website}} $|$
+    \textcolor[HTML]{371e77}{\raisebox{-0.05\height}{\faLinkedin} \href{https://www.linkedin.com/in/jordan-eisenman-394511202/}{LinkedIn}}
+    \end{tabularx}
+}
+
+% Skills Section
+\newcommand{\SkillsSection}{
+    \section{Skills}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Languages \& OS: Python, SQL, Git, Bash, Unix - Linux, Ubuntu, Neovim, YAML
+        \item Data Storage: databases, MySQL, data warehouses, Snowflake, Azure Data Lake, NoSQL, Firebase
+        \item Cloud: AWS, S3, RDS, Athena, EC2, ECS, Glue, RDS, IAM, Databricks, GCP, Cloud Run, Artifact Registry
+        \item MLOps: inference endpoints, REST APIs, streaming, Kafka, Kubernetes, ETL, Airflow, monitoring, Splunk
+        \item Other: TensorFlow, sklearn, LLMs, LangChain, GIS visualization, Tableau, numpy, pandas
+    \end{itemize}
+}
+
+
+\newcommand{\ProjectLists}{
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item \textcolor[HTML]{371e77}{\underline{\href{https://jordan-portfolio-7wxawbmyea-uc.a.run.app/}{\raisebox{-0.05\height}{Portfolio Website}}}}: Hosting portfolio website using Sveltekit, Tailwind, Docker, Cloud Run, \& GCP
+        \item \textcolor[HTML]{371e77}{\underline{\href{https://github.com/hockeyiscool19/jordangpt/}{\raisebox{-0.05\height}{JordanGpt}}}}: Hosting web API exposing chatbot, answering career-oriented questions, \& resume data
+        \item \textcolor[HTML]{371e77}{\underline{\href{https://github.com/hockeyiscool19/terminal/}{\raisebox{-0.05\height}{Terminal}}}}: Made chatbot UI agent capable of controlling my email \& local computer through chat instruction
+        \item \textcolor[HTML]{371e77}{\underline{\href{https://github.com/hockeyiscool19/mom-texter/}{\raisebox{-0.05\height}{Mom Texter}}}}: Developed CLI script capable of scheduling GPT-3 generated texts to my mom
+    \end{itemize}
+}
+
+
+\newcommand{\Positions}{
+    \begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{DataShapes} \hfill 06/2023 - 08/2023 \\
+    \textit{Machine Learning Engineer Intern} \hfill AWS, AI/ML Research, Visualization \\[4pt]
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+            \item Formulated data science experiment investigating the efficacy of five different model types on radio frequency data
+            \item Studied model deployment onto edge devices for signal intelligence applications in military \& civil contexts
+            \item Collaboratively researched state-of-the-art AI/ML algorithms from academic papers \& industry experts
+            \item Developed team’s data lake, docker templates, \& secret key management system within AWS
+        \end{itemize}
+    \end{minipage}
+    \end{tabularx}
+    
+    % Tesla Motors Internship
+    \begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Tesla Motors} \hfill 01/2023 - 05/2023 \\
+    \textit{Data Engineer \& Quality Intern} \hfill Kafka, Kubernetes, OLTP, Airflow, Monitoring, Visualization \\[4pt]
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+            \item Earned performance review rating of 5/5 for exceptional achievement \& 4/5 for teamwork \& communication
+            \item Saved \$400,000 by reducing downtime of Kubeless bots through new API protocols \& added flexibility
+            \item Communicated with scientists \& engineers gathering requirements for automated reporting of laboratory results
+            \item Developed synchronously triggered Kubernetes Kubeless bots, alerting engineers of failed quality checks
+            \item Engineered monitoring dashboard for Kubeless bots utilizing Splunk logs \& Airflow scheduling
+        \end{itemize}
+    \end{minipage}
+    \end{tabularx}
+    
+
+    % Q2 Software Internship
+    \begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Q2 Software} \hfill 05/2022 - 08/2022 \\
+    \textit{Data Engineer Intern} \hfill Azure, Kubernetes, CICD, Unit Testing, Visualization \\[4pt]
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+            \item Consulted executives on the utility of dashboards for internal stakeholders \& external clients
+            \item Engineered BI dashboard piping data from Azure Data Lake logs using KQL, Airflow, Databricks, \& SQL
+            \item Created, tested, \& deployed peer-reviewed software within a CICD pipeline, utilizing git, DevOps, \& Kubernetes
+        \end{itemize}
+    \end{minipage}
+    \end{tabularx}
+    
+    % Esme Learning Solutions Internship
+    \begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Esme Learning Solutions} \hfill 06/2021 - 09/2021 \\
+    \textit{Data Analyst Engineer Intern} \hfill Snowflake, AI/ML, Sklearn, Visualization \\[4pt]
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+            \item Leveraged Snowflake, SQL, \& Tableau for data extraction, transformation, \& visualization of raw .json \& .yml data
+            \item Developed clustering algorithm with sci-kit learn to categorize user tendencies on learning and video platforms
+        \end{itemize}
+    \end{minipage}
+    \end{tabularx}
+}
+
+
+\newcommand{\AES}{
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+            \item Co-founded financial data consulting group, providing data infrastructure \& machine learning models
+            \item Managed technical vision, system implementations, data pipelines, \& code base for a team of five
+        \end{itemize}
+    \end{minipage}
+}
+
+
+\newcommand{\CS}{
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+            \item Led \& trained a group of nine students to work with PostgreSQL, pandas, \& APIs (scraping \& gitPython)
+        \end{itemize}
+    \end{minipage}
+}
+
+
+\newcommand{\ExtracurricularWithout}{
+    % AES Consulting Experience
+    \begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{AES Consulting Extracurricular} \hfill 06/2021 - 01/2023 \\
+    \textit{Co-Founder, Software Engineer} \hfill AWS, S3, AI/ML \\[4pt]
+    \AES
+    \end{tabularx}
+
+    % Cats' Stats Experience
+    \begin{tabularx}{\linewidth}{ @{}l r@{} }
+        \textbf{Cats' Stats} \hfill 08/2021 - 09/2022 \\
+        \textit{Chair of Data Engineering} \hfill Python, Git \\[4pt]
+        \CS
+    \end{tabularx}
+}
+
+\newcommand{\ExtracurricularWith}{
+    % AES Consulting Experience
+    \begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{AES Consulting (Extracurricular)} \hfill 06/2021 - 01/2023 \\
+    \textit{Co-Founder, Software Engineer} \hfill AWS, S3, AI/ML \\[4pt]
+    \AES
+    \end{tabularx}
+
+    % Cats' Stats Experience
+    \begin{tabularx}{\linewidth}{ @{}l r@{} }
+        \textbf{Cats' Stats (Extracurricular)} \hfill 08/2021 - 09/2022 \\
+        \textit{Chair of Data Engineering} \hfill Python, Git \\[4pt]
+        \CS
+    \end{tabularx}
+}
+
+
+% Education Section
+\newcommand{\EducationSection}{
+    \section{Education}
+    \begin{tabularx}{\linewidth}{ @{}l r@{} }
+        \textbf{Davidson College} \hfill \textbf{Davidson, North Carolina} \\[4pt]
+        \begin{minipage}[t]{\linewidth}
+            \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+                \item B.S. in Mathematics, \emph{Cum Laude} \hfill GPA: 3.66
+                \item Coursework: Machine Learning, Data Structures \& Algorithms, Linear Algebra, Statistics, Modeling
+                \item Research: Risk Analysis \& Machine Learning in Financial Markets with Dr. Jonad Pulaj
+            \end{itemize}
+        \end{minipage}
+    \end{tabularx}
+}
+
