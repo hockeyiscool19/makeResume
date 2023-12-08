@@ -18,8 +18,7 @@ select_template:
 	selected_template=$${files[$$((num-1))]}; \
 	echo $$selected_template > template.txt'
 
-
-# (4) Target to create the directory, copy files, and include the selected template
+# (4) Target to create the directory, copy files, include the selected template and create desc.tex
 create_directory: select_template
 	@echo "Enter the directory name (press Enter to use '$(DIRNAME)'): "; \
 	read input; \
@@ -28,13 +27,14 @@ create_directory: select_template
 	mkdir -p $$dirname; \
 	cp $(FILES) $$dirname/; \
 	cp templates/`cat template.txt` $$dirname/; \
+	cp templates/`cat template.txt` $$dirname/desc.tex; \
 	echo "DIRNAME=$$dirname" > $$dirname/.env; \
 	echo "SELECTED_TEMPLATE=`cat template.txt`" >> $$dirname/.env
 
 # (5) Target to compile .tex files using bash.sh
 compile_pdfs: create_directory
 	@echo "Generating PDFs in `cat dirname.txt`..."
-	@(cd `cat dirname.txt` && chmod +x bash.sh)
+	@(cd `cat dirname.txt` && chmod +x bash.sh && ./bash.sh)
 
 # (6) Target to clean the directory
 clean:
